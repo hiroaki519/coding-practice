@@ -1,0 +1,56 @@
+// scrollbarのcss
+.scroll-anime {
+  font-size: 10px;
+  position: absolute;
+  z-index: 10;
+  top: 590px;
+  right: 1%;
+  transform: rotate(90deg);
+  color: $cWhite;
+}
+
+.scroll-anime::before {
+  content: '';
+  position: absolute;
+  transform: translateY(50%);
+  left: 50px;
+  top: -4px;
+  border-radius: 50%;
+  background-color: $cWhite;
+  height: 9px;
+  width: 9px;
+
+  @include animation(
+  $name: scroll-bar,
+  $duration: 2s,
+  $timing-function: ease-in-out,
+  $iteration-count: infinite,
+  );
+}
+
+.scroll-anime::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 60px;
+  border-bottom: 1px solid $cWhite;
+  width: 56px;
+}
+
+
+@keyframes scroll-bar{
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 1;
+    left: 110px;
+  }
+  100%{
+    left: 110px;
+    opacity: 0;
+  }
+}

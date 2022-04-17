@@ -1,0 +1,34 @@
+.swiper-text{
+  & h2{
+    opacity: 0;
+    transform: translate(-50%,10px);
+    transition: all 0.7s;
+  }
+}
+.swiper-text-bottom{
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.7s;
+}
+#design-btn{
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.7s;
+}
+
+.swiper-slide{
+  &-active {
+    & .swiper-text h2{
+      transform: translate(-50%, 0);
+    }
+  
+    & .swiper-text-bottom, #design-btn{
+      transform: none;
+    }
+    & .swiper-text h2, .swiper-text-bottom, #design-btn {
+      opacity: 1;
+    }
+  }
+}
+
+

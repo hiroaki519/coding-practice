@@ -1,0 +1,36 @@
+// これは960px以下の記述です
+
+.concept__inner .concept__top-main {
+  width: 100%;
+}
+.concept__inner .concept__top .concept__top-section .concept-texts h2:nth-child(1) {
+  letter-spacing: 0.01em;
+  font-size: 22px;
+}
+
+.concept__top-section{
+& img{
+max-width:50%;
+}
+}
+
+.wrapper__inner-title h1 {
+  font-size: 50px;
+}
+
+.blog{
+  height: 520px;
+  &__inner{
+    & .blog-lists{
+      & li{
+        & a{
+          & .tex-deco{
+            text-decoration: underline;
+            display: inline;
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,294 @@
+// header
+.header{
+  padding: 16px 0;
+  height: 48px!important;
+  &__inner{
+   
+    &-nav{
+      display: none;
+    }
+  }
+}
+.mobile-menu__btn{
+  display: block;
+}
+// wrapper
+.wrapper{
+  background-image: url("../img/mobile/1x/header/img.jpg");
+  width: 1299px;
+  height: 569px;
+  background-position: center;
+  margin-right: 100px;
+  &-bg{
+    background-image: url("../img/mobile/1x/header/blue-bg.png");
+    width: 904px;
+    height: 840px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 100px;
+  }
+  &__inner{
+    position: relative;
+    z-index: 10;
+    padding: 0;
+    width: 355px;
+    margin: 0 auto;
+    &-title{
+      & h1{
+        font-size: 22px;
+        &:nth-child(1){
+          letter-spacing: 0.22em;
+        }
+        &:nth-child(2){
+          letter-spacing: 0.04em;
+        }
+      }
+      & h2{
+        font-size: 14px;
+      }
+    }
+    &-contact{
+      flex-direction: column;
+      & .tel-btn{
+        margin: 0 auto;
+        margin-bottom: 40px;
+      }
+      & .contact-btn{
+        margin: 0 auto;
+      }
+    }
+    &-news{
+      right: 9px !important;
+      width: 76%;
+      bottom: -200px;
+      & h2{
+        margin-right: 8%;
+      }
+      & a{
+        display: flex;
+        flex-direction: column;
+        & .underline{
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+.concept{
+  &__inner{
+    width: 90%;
+    & .concept__top{
+      height: 940px;
+      &-bg{
+        width: 160px;
+        height: 973px;
+        position: absolute;
+        left: -14px;
+      }
+      &-main{
+        width: 100%;
+      }
+      & .concept__top-section{
+        flex-direction: column;
+
+        & .concept-texts{
+          text-align: left;
+          width: 338px;
+          margin-right: auto;
+          margin-left: auto;
+          & h2{
+            font-size: 20px;
+            line-height: 28px;
+          }
+          & .price{
+            text-align: center;
+            font-size: 16px;
+            & span{
+              font-size: 36px;
+            }
+          }
+        }
+
+      }
+      & #detail-btn{
+        bottom: 23px;
+      }
+    }
+  }
+}
+.concept__top-section{
+  & img{
+  max-width:100%;
+  }
+  }
+// char
+.char{
+  background-image: none;
+  height: 897px;
+  &__inner{
+    width: 100%;
+    flex-direction: column;
+    &-left{
+      margin-top: 0;
+      padding: 40px 0;
+      width: 100%;
+      background-color: $charbg;
+      & h1{
+        text-align: center;
+      }
+      & div{
+        width: 90%;
+        margin: 0 auto;
+
+        & .blue-title{
+          display: block;
+          width: 194px;
+          margin: 0 auto;
+          font-size: 20px;
+          line-height: 28px;
+        }
+      }
+      
+    }
+    &-right{
+      width: 90%;
+    margin: 0 auto;
+      &-feature{
+        width: 100%;
+        position: relative;
+        @for $i from 1 through 3{
+          &:nth-child(#{$i}){
+            margin-left: 0px;
+          }
+        }
+        & .char-feature-text{
+         position: absolute; 
+         left: 0;
+         margin-top: 8px;
+         & h2{
+           letter-spacing: 0.15em;
+           text-align: center;
+           line-height: 26px;
+           color: $cBlue;
+           font-size: 20px;
+         }
+         & p{
+           line-height: 26px;
+           margin-top: 24px;
+           font-size: 15px;
+         }
+        }
+      }
+    }
+  }
+  .gray-bg{
+    background-color: $charbg;
+    height: 120px;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+// service
+.service{
+  & .service-bg{
+    right: -20px;
+    background-image: url("../img/mobile/1x/SERVICE.png");
+    width: 160px;
+    height: 614px;
+  }
+  & h1{
+    font-size: 20px;
+    line-height: 28px;
+    width: 299px;
+    display: block;
+    margin: 0 auto;
+  }
+  &__lead{
+    font-size: 14px;
+    line-height: 28px;
+  }
+  &__menus{
+    flex-direction: column;
+    & .service--menu{
+      width: 100%;
+      &-img{
+        & p{
+          &:nth-of-type(1){
+            padding: 12px 27px;
+           
+         }
+        }
+      }
+    }
+  }
+}
+
+// workは1024px以下のscssでレスポンシブ対応のスタイルを適応する。
+.work{
+  &-bg{
+    background-image: url("../img/mobile/1x/WORKS.png");
+    width: 168px;
+    height: 525px;
+    left: 0;
+  }
+}
+
+// blog
+.blog{
+  height: 782px;
+  background-image: url("../img/mobile/1x/blog-bg.jpg");
+  &__inner{
+    width: 90%;
+    & .blog-bg{
+      top: -71px;
+      right: -20px;
+      background-image: url("../img/mobile/1x/BLOG.png");
+      width: 160px;
+      height: 409px;
+    }
+    & .blog-lists{
+      & li{
+        padding-left: 0;
+        padding-right: 0;
+        line-height: 27.2px;
+        & a{
+          & .blog-day{
+            display: block;
+          }
+          & .tex-deco{
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.footer{
+  &__top{
+    background-image: url("../img/mobile/1x/contact01.jpg");
+    & h2{
+      font-size: 18px;
+      letter-spacing: 0.1em;
+    }
+    &__contact{
+      & .tel-btn{
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
+    }
+  }
+  &__bottom{
+    & p{
+      font-size: 14px;
+    }
+  }
+}

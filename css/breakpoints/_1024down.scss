@@ -1,0 +1,36 @@
+.wrapper__inner-title h1:nth-child(1) {
+  letter-spacing: 0.18em;
+}
+.wrapper__inner-title h1:nth-child(2) {
+  letter-spacing: 0.01em;
+}
+
+.concept__inner .concept__top-main {
+  width: 930px;
+}
+.concept__inner .concept__top .concept__top-section .concept-texts h2:nth-child(1) {
+  letter-spacing: 0.01em;
+}
+.work{
+  & .work-texts{
+    & .blue-title{
+      font-size: 20px;
+      line-height: 28px;
+      width: 299px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+.swiper-button-prev, .swiper-button-next{
+  display: none;
+}
+#design-btn{
+  margin-top: 32px;
+}
+
+.blog__inner .blog-lists li {
+  font-size: 14px;
+}
